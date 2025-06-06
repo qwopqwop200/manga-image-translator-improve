@@ -20,7 +20,7 @@ revert_upscaling = false
 
 [translator]
 translator = "gemini_2stage"
-target_lang = "ENG"
+target_lang = "KOR"
 no_text_lang_skip = false
 
 [detector]
