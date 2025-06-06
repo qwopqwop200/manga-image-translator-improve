@@ -1,7 +1,8 @@
-mask_dilation_offset = 30
+mask_dilation_offset = 40
+kernel_size = 3
 
 [render]
-renderer = "default"
+renderer = "manga2eng_pillow"
 alignment = "auto"
 disable_font_border = false
 font_size_offset = 0
@@ -11,13 +12,14 @@ uppercase = false
 lowercase = false
 gimp_font = "Sans-serif"
 no_hyphenation = false
+font_color = "000000:FFFFFF"
 
 [upscale]
 upscaler = "esrgan"
 revert_upscaling = false
 
 [translator]
-translator = "openai"
+translator = "gemini_2stage"
 target_lang = "ENG"
 no_text_lang_skip = false
 
@@ -47,4 +49,4 @@ use_mocr_merge = false
 ocr = "48px"
 min_text_length = 0
 ignore_bubble = 0
-
+prob = -1
